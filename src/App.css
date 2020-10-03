@@ -1,3 +1,7 @@
-.App {
-  text-align: center;
+body {
+  background: url("./images/background.jpg") no-repeat center center fixed;
+  -webkit-background: cover;
+  -moz-background: cover;
+  -o-background: cover;
+  background: cover;
 }
