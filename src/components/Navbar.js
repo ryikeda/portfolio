@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
 import avatar from "../images/avatarSmall.jpg";
@@ -16,13 +17,7 @@ import {
   ListItemIcon,
 } from "@material-ui/core";
 
-import {
-  ArrowBack,
-  AssignmentInd,
-  Home,
-  Apps,
-  ContactMail,
-} from "@material-ui/icons";
+import { ArrowBack, Home, Apps } from "@material-ui/icons";
 
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
@@ -46,18 +41,12 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
-  },
-  {
-    listIcon: <AssignmentInd />,
-    listText: "Resume",
+    listPath: "/",
   },
   {
     listIcon: <Apps />,
-    listText: "Portfolio",
-  },
-  {
-    listIcon: <ContactMail />,
-    listText: "Contacts",
+    listText: "Projects",
+    listPath: "/projects",
   },
 ];
 
@@ -80,7 +69,7 @@ const Navbar = () => {
       <Divider />
       <List>
         {menuItems.map((listItem, key) => (
-          <ListItem button key={key}>
+          <ListItem button key={key} component={Link} to={listItem.listPath}>
             <ListItemIcon className={classes.listItem}>
               {listItem.listIcon}
             </ListItemIcon>
