@@ -18,6 +18,7 @@ import {
 } from "@material-ui/core";
 
 import { ArrowBack, Home, Apps } from "@material-ui/icons";
+import Footer from "./Footer";
 
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
@@ -100,6 +101,7 @@ const Navbar = () => {
               onClose={togglerSlider("right", false)}
             >
               {sideList("right")}
+              <Footer />
             </MobilRightMenuSlider>
           </Toolbar>
         </AppBar>

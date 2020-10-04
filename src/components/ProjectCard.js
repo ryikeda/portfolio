@@ -1,8 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
-  Box,
-  Grid,
   Card,
   CardActionArea,
   CardActions,
