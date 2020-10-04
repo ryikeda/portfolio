@@ -23,7 +23,7 @@ import { ArrowBack, Home, Apps } from "@material-ui/icons";
 const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
     width: 250,
-    background: "#007ced",
+    background: "#007CED",
     height: "100%",
   },
   avatar: {
@@ -88,7 +88,7 @@ const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#222" }}>
+        <AppBar position="static" style={{ background: "#02020A" }}>
           <Toolbar>
             <IconButton onClick={togglerSlider("right", true)}>
               <ArrowBack style={{ color: "#007ced" }} />
