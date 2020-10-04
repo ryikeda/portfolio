@@ -34,7 +34,7 @@ const Projects = () => {
       >
         {projectsContent.map((proj, i) => {
           return (
-            <Grid item xs={12} sm={8} md={4} lg={3} key={i}>
+            <Grid item xs={12} sm={8} md={6} lg={3} key={i}>
               <ProjectCard content={proj} />
             </Grid>
           );
