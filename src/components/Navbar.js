@@ -23,7 +23,7 @@ import Footer from "./Footer";
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
-    width: 250,
+    width: 300,
     background: "#007CED",
     height: "100%",
   },
