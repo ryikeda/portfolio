@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
+
 import avatar from "../images/avatarSmall.jpg";
 import {
   AppBar,
@@ -17,7 +18,8 @@ import {
   ListItemIcon,
 } from "@material-ui/core";
 
-import { ArrowBack, Home, Apps } from "@material-ui/icons";
+import MenuIcon from "@material-ui/icons/Menu";
+import { Home, Apps } from "@material-ui/icons";
 import Footer from "./Footer";
 
 // CSS STYLES
@@ -92,7 +94,7 @@ const Navbar = () => {
         <AppBar position="static" style={{ background: "#070601" }}>
           <Toolbar>
             <IconButton onClick={togglerSlider("right", true)}>
-              <ArrowBack style={{ color: "#007ced" }} />
+              <MenuIcon style={{ color: "#007ced" }} />
             </IconButton>
             <Typography variant="h5">Portfolio</Typography>
             <MobilRightMenuSlider
