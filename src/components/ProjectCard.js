@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
     margin: "auto",
+    border: "3px solid #FFFFFF",
   },
 }));
 
