@@ -44,9 +44,11 @@ const ProjectCard = ({
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button href={live} size="small" color="primary" target="_blank">
-          Live Version
-        </Button>
+        {live && (
+          <Button href={live} size="small" color="primary" target="_blank">
+            Live Version
+          </Button>
+        )}
         <Button href={git} size="small" color="primary" target="_blank">
           Git Repo
         </Button>

@@ -2,6 +2,7 @@ import yosokuImg from "../images/yosoku-app.jpg";
 import netcloneImg from "../images/netclone.jpg";
 import hackerCloneImg from "../images/hack_or_snooze.jpg";
 import jeopardyImg from "../images/jeopardy.jpg";
+import backendNode from "../images/backend_node.jpg";
 
 export default [
   {
@@ -21,6 +22,14 @@ export default [
     git: "https://github.com/ryikeda/netflix-clone",
     live: "https://ryikeda.github.io/netflix-clone/",
     image: netcloneImg,
+  },
+  {
+    name: "jobly",
+    title: "Express API",
+    description: "This is the backend for a Job posting application",
+    git: "https://github.com/ryikeda/Jobly",
+    live: "",
+    image: backendNode,
   },
   {
     name: "hackerClone",
