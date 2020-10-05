@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Redirect, Switch } from "react-router-dom";
 import "./App.css";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Home from "./components/";
@@ -9,8 +9,11 @@ function App() {
   return (
     <>
       <CssBaseline />
-      <Route exact path="/" component={Home} />
-      <Route path="/projects" component={Projects} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={Projects} />
+        <Redirect to="/" />
+      </Switch>
     </>
   );
 }
