@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, Grid } from "@material-ui/core";
+import { Box, Grid, Container } from "@material-ui/core";
 import Navbar from "./Navbar";
 import ProjectCard from "./ProjectCard";
 import projectsContent from "./ProjectsContent";
@@ -25,21 +25,23 @@ const Projects = () => {
   return (
     <Box component="div" className={classes.mainContainer}>
       <Navbar />
-      <Grid
-        container
-        justify="center"
-        alignItems="center"
-        spacing={3}
-        className={classes.cardsContainer}
-      >
-        {projectsContent.map((proj, i) => {
-          return (
-            <Grid item xs={12} sm={8} md={6} lg={3} key={i}>
-              <ProjectCard content={proj} />
-            </Grid>
-          );
-        })}
-      </Grid>
+      <Container>
+        <Grid
+          container
+          justify="center"
+          alignItems="center"
+          spacing={3}
+          className={classes.cardsContainer}
+        >
+          {projectsContent.map((proj, i) => {
+            return (
+              <Grid item xs={12} sm={6} key={i}>
+                <ProjectCard content={proj} />
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Container>
     </Box>
   );
 };

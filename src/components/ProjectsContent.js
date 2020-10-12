@@ -3,8 +3,18 @@ import netcloneImg from "../images/netclone.jpg";
 import hackerCloneImg from "../images/hack_or_snooze.jpg";
 import jeopardyImg from "../images/jeopardy.jpg";
 import backendNode from "../images/backend_node.jpg";
+import joblyImg from "../images/jobly.jpg";
 
 export default [
+  {
+    name: "jobly",
+    title: "Jobly",
+    description:
+      "The user can see job postings and apply to them. It uses Material UI, Postgres, JWT and express.",
+    git: "https://github.com/ryikeda/react-jobly",
+    live: "https://5f844e48e6479ba91e3dee84--sleepy-minsky-612fb1.netlify.app/",
+    image: joblyImg,
+  },
   {
     name: "yosoku-app",
     title: "Price Prediction",

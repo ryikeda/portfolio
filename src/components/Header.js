@@ -7,9 +7,9 @@ import Typed from "react-typed";
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
-    margin: theme.spacing(1),
+    width: theme.spacing(20),
+    height: theme.spacing(20),
+    margin: theme.spacing(2),
   },
   title: {
     color: "#007ced",
@@ -42,7 +42,7 @@ const Header = () => {
       <br />
       <Typography className={classes.subTitle} variant="h5">
         <Typed
-          strings={["Web Developer", "Full Stack Developer", "MERN Stack"]}
+          strings={["Web Developer", "Full Stack Developer"]}
           typeSpeed={40}
           backSpeed={60}
           loop
